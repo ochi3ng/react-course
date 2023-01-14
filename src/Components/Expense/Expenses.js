@@ -1,10 +1,12 @@
 import React from 'react'
+import ExpensesFilter from './ExpensesFilter';
 import ExpenseItem from './ExpenseItem'
 import './Expenses.css';
 
 function Expenses(props) {
   return (
     <div className='expenses'>
+      <ExpensesFilter/>
          <ExpenseItem
      title={props.items[0].title}
      amount={props.items[0].amount}
